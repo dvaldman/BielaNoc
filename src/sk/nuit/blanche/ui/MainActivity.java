@@ -8,8 +8,6 @@ import java.util.NoSuchElementException;
 import sk.nuit.blanche.R;
 import sk.nuit.blanche.interfaces.FragmentSwitcherInterface;
 import sk.nuit.blanche.ui.fragment.BaseFragment;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
