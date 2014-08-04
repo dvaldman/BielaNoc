@@ -8,6 +8,7 @@ import java.util.NoSuchElementException;
 import sk.nuit.blanche.R;
 import sk.nuit.blanche.interfaces.FragmentSwitcherInterface;
 import sk.nuit.blanche.ui.fragment.BaseFragment;
+import sk.nuit.blanche.ui.fragment.MainMenuFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -51,7 +52,7 @@ public class MainActivity extends BaseActivity implements FragmentSwitcherInterf
 //			switchFragment(AboutFragment.newInstance(args), clearBackStack);
 			break;
 		case FRAGMENT_MAIN:
-//			switchFragment(MainFragment.newInstance(args), clearBackStack);
+			switchFragment(MainMenuFragment.newInstance(), clearBackStack);
 			break;
 		
 		}

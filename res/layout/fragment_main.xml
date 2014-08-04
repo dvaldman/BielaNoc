@@ -6,8 +6,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="sk.nuit.blanche.ui.MainActivity$PlaceholderFragment" >
+    android:background="@drawable/bg">
 
-   
+<!--    <sk.nuit.blanche.customview.GifMovieView -->
+<!--        android:layout_width="fill_parent" -->
+<!--        android:layout_height="wrap_content" -->
+<!--        /> -->
 
 </RelativeLayout>
