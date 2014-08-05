@@ -1081,6 +1081,18 @@ containing a value of this type.
         public static final int bg=0x7f020057;
         public static final int bn_logo=0x7f020058;
         public static final int ic_launcher=0x7f020059;
+        public static final int ico_10_parents=0x7f02005a;
+        public static final int ico_11_fb=0x7f02005b;
+        public static final int ico_12_inst=0x7f02005c;
+        public static final int ico_1_artists=0x7f02005d;
+        public static final int ico_2_friends=0x7f02005e;
+        public static final int ico_3_photo=0x7f02005f;
+        public static final int ico_4_map=0x7f020060;
+        public static final int ico_5_nuit=0x7f020061;
+        public static final int ico_6_kids=0x7f020062;
+        public static final int ico_7_media=0x7f020063;
+        public static final int ico_8_audio=0x7f020064;
+        public static final int ico_9_disctionary=0x7f020065;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;

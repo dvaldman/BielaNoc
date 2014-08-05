@@ -8,9 +8,141 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/bg">
 
-<!--    <sk.nuit.blanche.customview.GifMovieView -->
-<!--        android:layout_width="fill_parent" -->
-<!--        android:layout_height="wrap_content" -->
-<!--        /> -->
+<!-- 	<LinearLayout -->
+<!--         android:id="@+id/keypad"  -->
+<!--         android:layout_below="@+id/pin" -->
+<!--         android:layout_marginTop="@dimen/keypad_top_offset" -->
+<!--         android:orientation="vertical" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent"> -->
+        
+<!--         <LinearLayout  -->
+<!--             android:orientation="horizontal" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center_horizontal" -->
+<!--             android:layout_marginBottom="@dimen/login_btns_offset"> -->
+	        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key1" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="wrap_content" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:text="1" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key2" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="2" -->
+<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+	        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key3" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="3" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+<!--         </LinearLayout> -->
+<!--         <LinearLayout  -->
+<!--             android:orientation="horizontal" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center_horizontal" -->
+<!--             android:layout_marginBottom="@dimen/login_btns_offset"> -->
+	        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key4" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="4" -->
+<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key5" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="5" -->
+<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+	        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key6" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="6" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+<!--         </LinearLayout> -->
+<!--         <LinearLayout  -->
+<!--             android:orientation="horizontal" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center_horizontal" -->
+<!--             android:layout_marginBottom="@dimen/login_btns_offset"> -->
+	        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key7" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="7" -->
+<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key8" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="8" -->
+<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+	        
+<!-- 	        <Button -->
+<!-- 	            android:id="@+id/key9" -->
+<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
+<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
+<!-- 	            android:background="@drawable/keyboard_nr_background" -->
+<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
+<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
+<!-- 	            android:text="9" -->
+<!-- 	            android:gravity="center_vertical|center_horizontal" -->
+<!-- 	            /> -->
+<!--         </LinearLayout> -->
+        
+<!-- 	</LinearLayout> -->
 
 </RelativeLayout>
