@@ -3,5 +3,23 @@
 
     <string name="app_name">BielaNoc</string>
     <string name="action_settings">Settings</string>
+    
+    
+<!--     MENU	 -->
+	<string name="menu_1_artists">ARTISTS</string>
+	<string name="menu_2_friends">FRIENDS</string>
+	<string name="menu_3_photo">PHOTO</string>
+	
+	<string name="menu_4_map">MAP</string>
+	<string name="menu_5_nuit">NUIT BLANCHE</string>
+	<string name="menu_6_kids">KIDS</string>
+	
+	<string name="menu_7_media">MULTIMEDIA</string>
+	<string name="menu_8_audio">AUDIO GUIDE</string>
+	<string name="menu_9_dictionary">DICTIONARY></string>
+	
+	<string name="menu_10_partners">PARTNERS</string>
+	<string name="menu_11_facebook">FACEBOOK</string>
+	<string name="menu_12_instagram">INSTAGRAM</string>
 
 </resources>

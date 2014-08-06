@@ -8,142 +8,165 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/bg">
 
-<!-- 	<LinearLayout -->
-<!--         android:id="@+id/keypad"  -->
-<!--         android:layout_below="@+id/pin" -->
-<!--         android:layout_marginTop="@dimen/keypad_top_offset" -->
-<!--         android:orientation="vertical" -->
-<!--         android:layout_width="fill_parent" -->
-<!--         android:layout_height="fill_parent"> -->
+	<LinearLayout
+        android:id="@+id/keypad" 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
         
-<!--         <LinearLayout  -->
-<!--             android:orientation="horizontal" -->
-<!--             android:layout_width="wrap_content" -->
-<!--             android:layout_height="wrap_content" -->
-<!--             android:layout_gravity="center_horizontal" -->
-<!--             android:layout_marginBottom="@dimen/login_btns_offset"> -->
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/menu_btns_offset">
 	        
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key1" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="wrap_content" -->
-<!-- 	            android:layout_height="wrap_content" -->
-<!-- 	            android:text="1" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
+	        <Button
+			    android:id="@+id/munu_btn1" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_1_artists"
+			    android:text="@string/menu_1_artists"
+			/>	
         
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key2" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="2" -->
-<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
+	        <Button
+			    android:id="@+id/munu_btn2" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_2_friends"
+			    android:text="@string/menu_2_friends"
+			/>	
+			
+	        <Button
+			    android:id="@+id/munu_btn3" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_3_photo"
+			    android:text="@string/menu_3_photo"
+			/>	
+        </LinearLayout>
+
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/menu_btns_offset">
 	        
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key3" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="3" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
-<!--         </LinearLayout> -->
-<!--         <LinearLayout  -->
-<!--             android:orientation="horizontal" -->
-<!--             android:layout_width="wrap_content" -->
-<!--             android:layout_height="wrap_content" -->
-<!--             android:layout_gravity="center_horizontal" -->
-<!--             android:layout_marginBottom="@dimen/login_btns_offset"> -->
-	        
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key4" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="4" -->
-<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
+	        <Button
+			    android:id="@+id/munu_btn4" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_4_map"
+			    android:text="@string/menu_4_map"
+			/>	
         
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key5" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="5" -->
-<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
-	        
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key6" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="6" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
-<!--         </LinearLayout> -->
-<!--         <LinearLayout  -->
-<!--             android:orientation="horizontal" -->
-<!--             android:layout_width="wrap_content" -->
-<!--             android:layout_height="wrap_content" -->
-<!--             android:layout_gravity="center_horizontal" -->
-<!--             android:layout_marginBottom="@dimen/login_btns_offset"> -->
-	        
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key7" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="7" -->
-<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
+	        <Button
+			    android:id="@+id/munu_btn5" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_5_nuit"
+			    android:text="@string/menu_5_nuit"
+			/>	
+			
+	        <Button
+			    android:id="@+id/munu_btn6" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_6_kids"
+			    android:text="@string/menu_6_kids"
+			/>	
+        </LinearLayout>
         
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key8" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="8" -->
-<!-- 	            android:layout_marginRight="@dimen/login_btns_offset" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/menu_btns_offset">
 	        
-<!-- 	        <Button -->
-<!-- 	            android:id="@+id/key9" -->
-<!-- 	            android:textColor="@color/keyboard_nr_text_color" -->
-<!-- 	            android:textSize="@dimen/keyboard_nr_text_size" -->
-<!-- 	            android:background="@drawable/keyboard_nr_background" -->
-<!-- 	            android:layout_width="@dimen/circle_btn_width" -->
-<!-- 	            android:layout_height="@dimen/circle_btn_height" -->
-<!-- 	            android:text="9" -->
-<!-- 	            android:gravity="center_vertical|center_horizontal" -->
-<!-- 	            /> -->
-<!--         </LinearLayout> -->
+	        <Button
+			    android:id="@+id/munu_btn7" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_7_media"
+			    android:text="@string/menu_7_media"
+			/>	
         
-<!-- 	</LinearLayout> -->
+	        <Button
+			    android:id="@+id/munu_btn8" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_8_audio"
+			    android:text="@string/menu_8_audio"
+			/>	
+			
+	        <Button
+			    android:id="@+id/munu_btn9" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_9_dictionary"
+			    android:text="@string/menu_9_dictionary"
+			/>	
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/menu_btns_offset">
+	        
+	        <Button
+			    android:id="@+id/munu_btn10" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_10_partners"
+			    android:text="@string/menu_10_partners"
+			/>	
+        
+	        <Button
+			    android:id="@+id/munu_btn11" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_11_fb"
+			    android:text="@string/menu_11_facebook"
+			/>	
+			
+	        <Button
+			    android:id="@+id/munu_btn12" 	
+			    android:layout_width="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:drawableTop="@drawable/ico_12_inst"
+			    android:text="@string/menu_12_instagram"
+			/>	
+        </LinearLayout>
+        
+	</LinearLayout>
 
 	<ImageView 
 	    android:layout_width="wrap_content"
@@ -151,6 +174,7 @@
 	    android:background="@drawable/bn_logo"
 	    android:layout_alignParentBottom="true"
 	    android:layout_marginBottom="@dimen/logo_bottom_offset"
-	    android:layout_centerHorizontal="true"/>
+	    android:layout_centerHorizontal="true"
+	    android:contentDescription="@string/app_name"/>
 
 </RelativeLayout>

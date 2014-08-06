@@ -992,6 +992,7 @@ containing a value of this type.
         /**  main menu 
          */
         public static final int logo_bottom_offset=0x7f080017;
+        public static final int menu_btns_offset=0x7f080018;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;
@@ -1084,7 +1085,7 @@ containing a value of this type.
         public static final int bg=0x7f020057;
         public static final int bn_logo=0x7f020058;
         public static final int ic_launcher=0x7f020059;
-        public static final int ico_10_parents=0x7f02005a;
+        public static final int ico_10_partners=0x7f02005a;
         public static final int ico_11_fb=0x7f02005b;
         public static final int ico_12_inst=0x7f02005c;
         public static final int ico_1_artists=0x7f02005d;
@@ -1095,7 +1096,7 @@ containing a value of this type.
         public static final int ico_6_kids=0x7f020062;
         public static final int ico_7_media=0x7f020063;
         public static final int ico_8_audio=0x7f020064;
-        public static final int ico_9_disctionary=0x7f020065;
+        public static final int ico_9_dictionary=0x7f020065;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1109,7 +1110,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05003d;
+        public static final int action_settings=0x7f05004a;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1129,9 +1130,22 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
+        public static final int keypad=0x7f05003d;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int middle=0x7f050012;
+        public static final int munu_btn1=0x7f05003e;
+        public static final int munu_btn10=0x7f050047;
+        public static final int munu_btn11=0x7f050048;
+        public static final int munu_btn12=0x7f050049;
+        public static final int munu_btn2=0x7f05003f;
+        public static final int munu_btn3=0x7f050040;
+        public static final int munu_btn4=0x7f050041;
+        public static final int munu_btn5=0x7f050042;
+        public static final int munu_btn6=0x7f050043;
+        public static final int munu_btn7=0x7f050044;
+        public static final int munu_btn8=0x7f050045;
+        public static final int munu_btn9=0x7f050046;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
@@ -1261,6 +1275,20 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000e;
         public static final int app_name=0x7f0a000d;
+        public static final int menu_10_partners=0x7f0a0018;
+        public static final int menu_11_facebook=0x7f0a0019;
+        public static final int menu_12_instagram=0x7f0a001a;
+        /**      MENU	 
+         */
+        public static final int menu_1_artists=0x7f0a000f;
+        public static final int menu_2_friends=0x7f0a0010;
+        public static final int menu_3_photo=0x7f0a0011;
+        public static final int menu_4_map=0x7f0a0012;
+        public static final int menu_5_nuit=0x7f0a0013;
+        public static final int menu_6_kids=0x7f0a0014;
+        public static final int menu_7_media=0x7f0a0015;
+        public static final int menu_8_audio=0x7f0a0016;
+        public static final int menu_9_dictionary=0x7f0a0017;
     }
     public static final class style {
         /** 
