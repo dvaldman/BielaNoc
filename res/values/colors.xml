@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Main Color set -->
+    <color name="transparent">#00000000</color>    
+    <color name="lightWhite">#66DDDDDD</color>
+</resources>

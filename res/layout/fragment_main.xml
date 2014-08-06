@@ -9,8 +9,9 @@
     android:background="@drawable/bg">
 
 	<LinearLayout
-        android:id="@+id/keypad" 
         android:orientation="vertical"
+        android:layout_above="@+id/logo"
+        android:gravity="center_vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
         
@@ -21,8 +22,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/menu_btns_offset">
 	        
-	        <Button
-			    android:id="@+id/munu_btn1" 	
+	        <sk.nuit.blanche.customview.CustomButton
+			    android:id="@+id/munu_btn1" 
+			    style="@style/main_menu_button"	
 			    android:layout_width="0dp"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
@@ -31,9 +33,10 @@
 			    android:text="@string/menu_1_artists"
 			/>	
         
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn2" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -41,9 +44,10 @@
 			    android:text="@string/menu_2_friends"
 			/>	
 			
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn3" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -59,9 +63,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/menu_btns_offset">
 	        
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn4" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -69,9 +74,10 @@
 			    android:text="@string/menu_4_map"
 			/>	
         
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn5" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -79,9 +85,10 @@
 			    android:text="@string/menu_5_nuit"
 			/>	
 			
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn6" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -97,9 +104,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/menu_btns_offset">
 	        
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn7" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -107,9 +115,10 @@
 			    android:text="@string/menu_7_media"
 			/>	
         
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn8" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -117,9 +126,10 @@
 			    android:text="@string/menu_8_audio"
 			/>	
 			
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn9" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -135,9 +145,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/menu_btns_offset">
 	        
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn10" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -145,9 +156,10 @@
 			    android:text="@string/menu_10_partners"
 			/>	
         
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn11" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -155,9 +167,10 @@
 			    android:text="@string/menu_11_facebook"
 			/>	
 			
-	        <Button
+	        <sk.nuit.blanche.customview.CustomButton
 			    android:id="@+id/munu_btn12" 	
 			    android:layout_width="0dp"
+			    style="@style/main_menu_button"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
 			    android:layout_height="wrap_content"
@@ -169,6 +182,7 @@
 	</LinearLayout>
 
 	<ImageView 
+	    android:id="@+id/logo"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:background="@drawable/bn_logo"

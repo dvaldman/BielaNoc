@@ -6,6 +6,6 @@
 
     <!-- main menu -->
     <dimen name="logo_bottom_offset">20dp</dimen>
-    <dimen name="menu_btns_offset">10dp</dimen>
+    <dimen name="menu_btns_offset">15dp</dimen>
     
 </resources>
