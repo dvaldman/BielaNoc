@@ -3,7 +3,7 @@ package sk.nuit.blanche.utils;
 
 public class Log {
 	private static boolean isDebugEnabled;
-	private static final String TAG = "VMT";
+	private static final String TAG = "BN";
 	
 	public  static void initialize(boolean isDebugEnabled){
 		Log.isDebugEnabled = isDebugEnabled;

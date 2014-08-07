@@ -203,29 +203,6 @@ public abstract class DownloadUtils {
 	public static abstract class Parser implements Serializable {
 		private static final long serialVersionUID = 1L;
 		
-		protected BaseResponse parseBaseResponse(JSONObject json) throws JSONException{
-			BaseResponse response = new BaseResponse();
-			if(json.has(Constants.KEYWORD_SUCCESS))
-				response.setSuccess(json.getBoolean(Constants.KEYWORD_SUCCESS));
-			else
-				response.setSuccess(false);
-			
-			if(json.has(Constants.KEYWORD_ERRORS) && !response.isSuccess()){
-				JSONArray errorArray = json.getJSONArray(Constants.KEYWORD_ERRORS);
-				if(errorArray == null)
-					return response;
-				
-				for (int i = 0; i< errorArray.length(); i++){
-					JSONObject errorJsonItem = errorArray.getJSONObject(i);
-					ResponseError err = new ResponseError();
-					err.setErrorCode(errorJsonItem.getInt(Constants.KEYWORD_ERROR_CODE));
-					err.setErrorMessage(errorJsonItem.getString(Constants.KEYWORD_ERROR_MSG));
-					err.setParameterName(errorJsonItem.getString(Constants.KEYWORD_PARAMETER_NAME));
-					response.addError(err);
-				}
-			}
-			return response;
-		}
 		
 		protected int errorResponse(Bundle bundle, BaseResponse response){
 			bundle.putInt(DownloadUtils.ERROR_CODE, response.getError(0).getErrorCode());

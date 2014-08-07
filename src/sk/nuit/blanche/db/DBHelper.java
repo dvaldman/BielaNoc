@@ -161,18 +161,7 @@ public class DBHelper extends SQLiteOpenHelper
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-//		executeSQL(db,Tables.TicketTypes.CREATE_TABLE);
-//		executeSQL(db,Tables.Ticket_Concession_Price.CREATE_TABLE);
-//		executeSQL(db,Tables.Zones.CREATE_TABLE);
-//		executeSQL(db,Tables.Routes.CREATE_TABLE);
-//		executeSQL(db,Tables.Concessions.CREATE_TABLE);
-//		executeSQL(db,Tables.PurchasedTickets.CREATE_TABLE);
-//		executeSQL(db,Tables.TicketsCategories.CREATE_TABLE);
-//		executeSQL(db,Tables.Categories.CREATE_TABLE);
-//		executeSQL(db,Tables.OfflineActivatedTickets.CREATE_TABLE);
-//		executeSQL(db, Tables.FlashPassAnimations.CREATE_TABLE);
-//		executeSQL(db,Tables.PrivateKey.CREATE_TABLE);
-		
+		executeSQL(db,Tables.Artists.CREATE_TABLE);
 	}
 
 	@Override

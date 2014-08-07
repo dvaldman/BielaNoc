@@ -2,6 +2,7 @@ package sk.nuit.blanche.ui;
 
 import java.util.Locale;
 
+import sk.nuit.blanche.utils.Log;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,7 +25,7 @@ public class BaseActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+		Log.initialize(true);
 		this.language = Locale.getDefault().getLanguage();
 		
 	}

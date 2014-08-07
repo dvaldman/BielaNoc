@@ -1,5 +1,7 @@
 package sk.nuit.blanche.db;
 
+import sk.nuit.blanche.core.Constants;
+
 
 public class Tables{
 	
@@ -8,37 +10,33 @@ public class Tables{
 		public static final int FALSE = 0;
 	}
 	
-	public static class TicketTypes
+	public static class Artists
 	{
 		public static final String	TABLE_NAME			= "Tickets";
 		
-//		public static final String	ID					= TABLE_NAME + "_" + Constants.KEYWORD_ID;
-//		public static final String	NAME				= TABLE_NAME + "_" + Constants.KEYWORD_NAME;
-//		public static final String	CODE				= TABLE_NAME + "_" + Constants.KEYWORD_CODE;
-//		public static final String  CURRENCY			= TABLE_NAME + "_" + Constants.KEYWORD_CURRENCY;
-//		public static final String	DESCRIPTION			= TABLE_NAME + "_" + Constants.KEYWORD_DESCRIPTION;
-//		public static final String	INSTANCE_ACTIVE		= TABLE_NAME + "_" + Constants.KEYWORD_ACTIVE_ON_PURCH;
-//		public static final String	VALIDATION_PERIOD	= TABLE_NAME + "_" + Constants.KEYWORD_VALIDATY_PERIOD;
-//		public static final String	START_DATE_TIME		= TABLE_NAME + "_" + Constants.KEYWORD_START_DATE_TIME;
-//		public static final String	END_DATE_TIME		= TABLE_NAME + "_" + Constants.KEYWORD_END_DATE_TIME;
-//		public static final String	ZONE_ID				= TABLE_NAME + "_" + Constants.KEYWORD_ZONE_ID;
-//		public static final String	ROUTE_ID			= TABLE_NAME + "_" + Constants.KEYWORD_ROUTE_ID;
-//		public static final String	TIME_OF_VALIDITY	= TABLE_NAME + "_" + Constants.KEYWORD_TIME_OF_VALIDITY;
-//		
-//		public static final String	CREATE_TABLE		= "CREATE TABLE " + TABLE_NAME + " (" + 
-//																							ID + " INTEGER PRIMARY KEY, " + 
-//																							NAME + " TEXT, "+ 
-//																							CODE + " INTEGER, "+
-//																							CURRENCY + " TEXT, " +
-//																							DESCRIPTION + " TEXT, "+
-//																							INSTANCE_ACTIVE + " INTEGER, "+
-//																							VALIDATION_PERIOD + " INTEGER, "+
-//																							START_DATE_TIME + " INTEGER, "+
-//																							END_DATE_TIME + " INTEGER, "+
-//																							ZONE_ID + " INTEGER, "+
-//																							ROUTE_ID + " INTEGER, "+
-//																							TIME_OF_VALIDITY + " INTEGER"+
-//																						");";
+		public static final String	NAME				= TABLE_NAME + "_" + Constants.KEYWORD_NAME;
+		public static final String	WORK				= TABLE_NAME + "_" + Constants.KEYWORD_WORK;
+		public static final String  IMAGE				= TABLE_NAME + "_" + Constants.KEYWORD_IMAGE;
+		public static final String	PLACE				= TABLE_NAME + "_" + Constants.KEYWORD_PLACE;
+		public static final String	COUNTRY				= TABLE_NAME + "_" + Constants.KEYWORD_COUNTRY;
+		public static final String	TYPE				= TABLE_NAME + "_" + Constants.KEYWORD_TYPE;
+		public static final String	DESCRIPTION			= TABLE_NAME + "_" + Constants.KEYWORD_DESCRIPTION;
+		public static final String	FOR_CHILDREN		= TABLE_NAME + "_" + Constants.KEYWORD_FORCHILDREN;
+		public static final String	LATITUDE			= TABLE_NAME + "_" + Constants.KEYWORD_LATITUDE;
+		public static final String	LONGITUDE			= TABLE_NAME + "_" + Constants.KEYWORD_LONGITUDE;
+		
+		public static final String	CREATE_TABLE		= "CREATE TABLE " + TABLE_NAME + " (" + 
+																							NAME + " TEXT, "+ 
+																							WORK + " TEXT, "+
+																							IMAGE + " TEXT, " +
+																							PLACE + " TEXT, "+
+																							COUNTRY + " TEXT, "+
+																							TYPE + " TEXT, "+
+																							DESCRIPTION + " TEXT, "+
+																							FOR_CHILDREN + " INTEGER, "+
+																							LATITUDE + " TEXT, "+
+																							LONGITUDE + " TEXT"+
+																						");";
 	}
 	
 	
