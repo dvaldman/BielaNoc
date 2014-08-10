@@ -42,7 +42,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import sk.nuit.blanche.R;
 import sk.nuit.blanche.core.GPSProvider;
+import sk.nuit.blanche.customview.CustomTextView;
 import sk.nuit.blanche.parser.DirectionsJSONParser;
+import sk.nuit.blanche.utils.Log;
 import sk.nuit.blanche.map.PlacesGroup;
 import sk.nuit.blanche.model.Artist;
 
@@ -72,7 +74,6 @@ public class MapFragment extends BaseFragment{
    
     
     private static View infoWindowView;
-    private static TextView TVaddress;
     
     private static String lastAddress;
     private static GPSProvider gps;
@@ -165,8 +166,8 @@ public class MapFragment extends BaseFragment{
             LatLng latLng = marker.getPosition();
             Point point = projection.toScreenLocation(latLng);
             int offsetX = getActivity().getResources().getDimensionPixelSize(R.dimen.map_marker_offset_x);
-            int offsetY = getActivity().getResources().getDimensionPixelSize(R.dimen.map_marker_offset_y);
-            Point point2 = new Point(point.x-offsetX,point.y-offsetY);
+            int offsetY = 0;//getActivity().getResources().getDimensionPixelSize(R.dimen.map_marker_offset_y);
+            Point point2 = new Point(point.x+offsetX,point.y-offsetY);
             LatLng point3 = projection.fromScreenLocation(point2);
             CameraUpdate zoom1 = CameraUpdateFactory.newLatLng(point3);
             map.animateCamera(zoom1);
@@ -188,29 +189,13 @@ public class MapFragment extends BaseFragment{
 	        }
 	        infoWindowView = getLayoutInflater(getArguments()).inflate(R.layout.place_detail_layout, null);
 	        Artist item = markerMap.get(marker);
-			TextView title = (TextView) infoWindowView.findViewById(R.id.title);
-			TVaddress = (TextView) infoWindowView.findViewById(R.id.description);
-			
-//			if(item.getAddress() == null || item.getAddress().equals("")){
-//				if(lastAddress == null){
-//					TVaddress.setText("H¼ad‡m adresu");
-//					AddressCallback adrcall = new AddressCallback(marker);
-//					AddressProvider.getAddressForLatLong(getActivity(), marker.getPosition(), AddressProvider.STREET_CITY,adrcall);
-//				}
-//				else
-//					TVaddress.setText(lastAddress);
-//			}
-//			else
-//				TVaddress.setText(item.getAddress());
+			CustomTextView title = (CustomTextView) infoWindowView.findViewById(R.id.title);
+			CustomTextView desc = (CustomTextView) infoWindowView.findViewById(R.id.description);
+
+			desc.setText(item.getWork());
 			title.setText(item.getName());
 			
-			title.setSelected(true);
-			
-//			title.setSingleLine();
-//			title.setEllipsize(TruncateAt.MARQUEE);
-//			title.setHorizontallyScrolling(true);
-			
-	      }catch(Exception e){}
+	      }catch(Exception e){Log.i("exception "+e.getMessage());}
 	      
 			return infoWindowView;
 		}

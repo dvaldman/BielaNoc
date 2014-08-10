@@ -949,6 +949,10 @@ containing a value of this type.
         /**  main menu 
          */
         public static final int logo_bottom_offset=0x7f070011;
+        public static final int map_infoWindow_desc_text_size=0x7f070019;
+        public static final int map_infoWindow_height=0x7f070017;
+        public static final int map_infoWindow_text_size=0x7f070018;
+        public static final int map_infoWindow_width=0x7f070016;
         /**  Map fragment 
          */
         public static final int map_marker_offset_x=0x7f070014;
@@ -1113,6 +1117,8 @@ containing a value of this type.
         public static final int marker=0x7f02009a;
         public static final int menu_icon=0x7f02009b;
         public static final int popup_window=0x7f02009c;
+        public static final int popup_window2=0x7f02009d;
+        public static final int popups_bg=0x7f02009e;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040024;
@@ -1375,8 +1381,8 @@ containing a value of this type.
         
          */
         public static final int AppBaseTheme=0x7f0a0059;
-        public static final int AppBaseTheme_ActionBar_TitleTextStyle=0x7f0a005d;
-        public static final int AppBaseTheme_ActionBarStyle=0x7f0a005c;
+        public static final int AppBaseTheme_ActionBar_TitleTextStyle=0x7f0a005e;
+        public static final int AppBaseTheme_ActionBarStyle=0x7f0a005d;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
@@ -1470,6 +1476,7 @@ containing a value of this type.
         public static final int Widget_Sherlock_SearchAutoCompleteTextView=0x7f0a0034;
         public static final int Widget_Sherlock_Spinner_DropDown_ActionBar=0x7f0a0024;
         public static final int Widget_Sherlock_TextView_SpinnerItem=0x7f0a0032;
+        public static final int custom_font_text=0x7f0a005c;
         public static final int main_menu_button=0x7f0a005b;
     }
     public static final class styleable {

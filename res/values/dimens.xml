@@ -16,5 +16,9 @@
     <!-- Map fragment -->
     <dimen name="map_marker_offset_x">50dp</dimen>
     <dimen name="map_marker_offset_y">40dp</dimen>
+    <dimen name="map_infoWindow_width">600dp</dimen>
+    <dimen name="map_infoWindow_height">100dp</dimen>
+    <dimen name="map_infoWindow_text_size">17sp</dimen>
+    <dimen name="map_infoWindow_desc_text_size">16sp</dimen>
     
 </resources>
