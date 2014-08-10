@@ -12,7 +12,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 
 
 public class SplashScreenActivity extends BaseActivity {
@@ -48,8 +52,10 @@ public class SplashScreenActivity extends BaseActivity {
 	private void startApp(){
 		startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
 		finish();
+		overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 	}
 	
+
 	
 	Callback callback = new Callback() {
 		

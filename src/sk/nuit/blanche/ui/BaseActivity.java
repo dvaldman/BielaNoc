@@ -68,12 +68,13 @@ public class BaseActivity extends SherlockFragmentActivity {
     	CustomTextView ctv = (CustomTextView) v.findViewById(R.id.title);
     	
     	
-    	SpannableString s = new SpannableString(title);
-        s.setSpan(new MyTypefaceSpan(this, "anca_medium.otf"), 0, s.length(),
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        
-        // Update the action bar title with the TypefaceSpan instance
-        ctv.setText(s);
+//    	SpannableString s = new SpannableString(title);
+//        s.setSpan(new MyTypefaceSpan(this, "anca_medium.otf"), 0, s.length(),
+//                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//        
+//        // Update the action bar title with the TypefaceSpan instance
+//        ctv.setText(s);
+    	ctv.setText(title);
 
     	getActionBar().setCustomView(v);
 //       getActionBar().setTitle(s);

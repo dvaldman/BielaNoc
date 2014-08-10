@@ -162,15 +162,16 @@ public class MapFragment extends BaseFragment{
 		public boolean onMarkerClick(Marker marker) {
 			
 			lastAddress = null;
-			Projection projection = map.getProjection();
+//			Projection projection = map.getProjection();
             LatLng latLng = marker.getPosition();
-            Point point = projection.toScreenLocation(latLng);
-            int offsetX = getActivity().getResources().getDimensionPixelSize(R.dimen.map_marker_offset_x);
-            int offsetY = 0;//getActivity().getResources().getDimensionPixelSize(R.dimen.map_marker_offset_y);
-            Point point2 = new Point(point.x+offsetX,point.y-offsetY);
-            LatLng point3 = projection.fromScreenLocation(point2);
-            CameraUpdate zoom1 = CameraUpdateFactory.newLatLng(point3);
-            map.animateCamera(zoom1);
+//            Point point = projection.toScreenLocation(latLng);
+//            int offsetX = 0;//getActivity().getResources().getDimensionPixelSize(R.dimen.map_marker_offset_x);
+//            int offsetY = 0;//getActivity().getResources().getDimensionPixelSize(R.dimen.map_marker_offset_y);
+//            Point point2 = new Point(point.x+offsetX,point.y-offsetY);
+//            LatLng point3 = projection.fromScreenLocation(point2);
+//            CameraUpdate zoom1 = CameraUpdateFactory.newLatLng(point3);
+//            map.animateCamera(zoom1);
+            map.animateCamera(CameraUpdateFactory.newLatLng(latLng));
             marker.showInfoWindow();
 			return true;
 		}

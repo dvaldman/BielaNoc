@@ -8,11 +8,12 @@
 
 <sk.nuit.blanche.customview.CustomTextView
         android:id="@+id/title"
+        style="@style/custom_font_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="@dimen/actionBar_text_size"
             android:maxLines="1"
             android:ellipsize="end"
-            android:text="" />
+            android:text=""/>
 </LinearLayout>
