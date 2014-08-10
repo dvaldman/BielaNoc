@@ -109,6 +109,10 @@ public class DBHelper extends SQLiteOpenHelper
 		return getResultsFromSingleTable("*",fromTable,whereThese,areEquealThese,equality);
 	}
 	
+	public Cursor getResultsFromSingleTable(String fromTable){
+		return getResultsFromSingleTable("*",fromTable,null, null, null);
+	}
+	
 	public Cursor getResultsFromSingleTable(String fromTable, String[] whereThese, String[] areEquealThese){
 		return getResultsFromSingleTable("*",fromTable,whereThese,areEquealThese,null);
 	}

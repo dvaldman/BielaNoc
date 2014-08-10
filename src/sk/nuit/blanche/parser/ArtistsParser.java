@@ -65,9 +65,14 @@ public class ArtistsParser extends Parser {
 			values.put(Tables.Artists.TYPE, artistJsonItem.getString(Constants.KEYWORD_TYPE));
 			values.put(Tables.Artists.DESCRIPTION, artistJsonItem.getString(Constants.KEYWORD_DESCRIPTION));
 			values.put(Tables.Artists.FOR_CHILDREN, (artistJsonItem.getBoolean(Constants.KEYWORD_FORCHILDREN)?Tables.dbBoolean.TRUE:Tables.dbBoolean.FALSE));
-			values.put(Tables.Artists.LATITUDE, Long.toString(artistJsonItem.getLong(Constants.KEYWORD_LATITUDE)));
-			values.put(Tables.Artists.LONGITUDE, Long.toString(artistJsonItem.getLong(Constants.KEYWORD_LONGITUDE)));
+//			values.put(Tables.Artists.LATITUDE, Long.toString(artistJsonItem.getLong(Constants.KEYWORD_LATITUDE)));
+//			values.put(Tables.Artists.LONGITUDE, Long.toString(artistJsonItem.getLong(Constants.KEYWORD_LONGITUDE)));
+//			
+			values.put(Tables.Artists.LATITUDE, artistJsonItem.getString(Constants.KEYWORD_LATITUDE));
+			values.put(Tables.Artists.LONGITUDE, artistJsonItem.getString(Constants.KEYWORD_LONGITUDE));
 			
+			
+			Log.i("parsing: "+artistJsonItem.getString(Constants.KEYWORD_LONGITUDE));
 			database.insertValuesIntoTable(Tables.Artists.TABLE_NAME, values);
 			
 

@@ -14,6 +14,6 @@ public class Constants {
 	public static final String KEYWORD_FORCHILDREN	 = "forChildren";
 	public static final String KEYWORD_LATITUDE	 	 = "latitude";
 	public static final String KEYWORD_LONGITUDE 	 = "longitude";
-	
+	public static final String KEYWORD_ID		 	 = "id";
 	
 }

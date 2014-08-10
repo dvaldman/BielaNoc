@@ -8,4 +8,13 @@
     <dimen name="logo_bottom_offset">20dp</dimen>
     <dimen name="menu_btns_offset">15dp</dimen>
     
+    
+    <!-- action bar -->
+    <dimen name="actionBar_text_size">30sp</dimen>
+    
+    
+    <!-- Map fragment -->
+    <dimen name="map_marker_offset_x">50dp</dimen>
+    <dimen name="map_marker_offset_y">40dp</dimen>
+    
 </resources>

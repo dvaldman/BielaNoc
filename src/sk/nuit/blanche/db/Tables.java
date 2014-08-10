@@ -14,6 +14,7 @@ public class Tables{
 	{
 		public static final String	TABLE_NAME			= "Tickets";
 		
+		public static final String	ID					= TABLE_NAME + "_" + Constants.KEYWORD_ID;
 		public static final String	NAME				= TABLE_NAME + "_" + Constants.KEYWORD_NAME;
 		public static final String	WORK				= TABLE_NAME + "_" + Constants.KEYWORD_WORK;
 		public static final String  IMAGE				= TABLE_NAME + "_" + Constants.KEYWORD_IMAGE;
@@ -26,6 +27,7 @@ public class Tables{
 		public static final String	LONGITUDE			= TABLE_NAME + "_" + Constants.KEYWORD_LONGITUDE;
 		
 		public static final String	CREATE_TABLE		= "CREATE TABLE " + TABLE_NAME + " (" + 
+																							ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
 																							NAME + " TEXT, "+ 
 																							WORK + " TEXT, "+
 																							IMAGE + " TEXT, " +

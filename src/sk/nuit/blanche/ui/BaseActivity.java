@@ -2,21 +2,37 @@ package sk.nuit.blanche.ui;
 
 import java.util.Locale;
 
+
+
+
+
+
+
+
+
+
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+
+import sk.nuit.blanche.R;
+import sk.nuit.blanche.customview.CustomTextView;
+import sk.nuit.blanche.customview.MyTypefaceSpan;
+import sk.nuit.blanche.model.ContentHolder;
 import sk.nuit.blanche.utils.Log;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.view.Menu;
-import android.view.ViewGroup;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.TypefaceSpan;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ImageView;
 
 
-public class BaseActivity extends FragmentActivity {
+public class BaseActivity extends SherlockFragmentActivity {
 	
 	protected Context context = this;
 	protected String language;
@@ -24,16 +40,49 @@ public class BaseActivity extends FragmentActivity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+//		requestWindowFeature(com.actionbarsherlock.view.Window.FEATURE_ACTION_BAR_OVERLAY);
 		super.onCreate(savedInstanceState);
 		Log.initialize(true);
 		this.language = Locale.getDefault().getLanguage();
 		
 	}
 	
-	public void refresh(String params) {
-		
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getSupportMenuInflater();
+		this.menu = menu;
+		inflater.inflate(R.menu.main, menu);
+		return super.onCreateOptionsMenu(menu);
 	}
 	
+	public void setHomeAsBack(String title) {
+    	getSupportActionBar().show();
+    	getSupportActionBar().setHomeButtonEnabled(true);
+    	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    	getActionBar().setDisplayShowCustomEnabled(true);
+    	getActionBar().setDisplayShowTitleEnabled(false);
+
+    	LayoutInflater inflator = LayoutInflater.from(this);
+    	View v = inflator.inflate(R.layout.actionbar_title, null);
+
+    	CustomTextView ctv = (CustomTextView) v.findViewById(R.id.title);
+    	
+    	
+    	SpannableString s = new SpannableString(title);
+        s.setSpan(new MyTypefaceSpan(this, "anca_medium.otf"), 0, s.length(),
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        
+        // Update the action bar title with the TypefaceSpan instance
+        ctv.setText(s);
+
+    	getActionBar().setCustomView(v);
+//       getActionBar().setTitle(s);
+    	
+    }
+	
+	public void hideActionBar(){
+		getSupportActionBar().hide();
+	}
 	
 	
 	public void showErrorDialog(){
@@ -62,4 +111,9 @@ public class BaseActivity extends FragmentActivity {
 	        inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 	    }
 	}
+	
+	public ContentHolder getContentHolder(){
+		return ContentHolder.getInstance(this);
+	}
+	
 }

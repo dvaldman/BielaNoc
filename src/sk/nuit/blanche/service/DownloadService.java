@@ -6,7 +6,7 @@ import org.json.JSONObject;
 import sk.nuit.blanche.core.ApplicationStorage;
 import sk.nuit.blanche.core.Config;
 import sk.nuit.blanche.core.Constants;
-import sk.nuit.blanche.core.GPSTracker;
+import sk.nuit.blanche.core.GPSProvider;
 import sk.nuit.blanche.net.DownloadUtils.AbstractDownloadService;
 import sk.nuit.blanche.net.DownloadUtils.Callback;
 import sk.nuit.blanche.net.DownloadUtils.Methods;

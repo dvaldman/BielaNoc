@@ -8,8 +8,6 @@ import sk.nuit.blanche.db.Tables;
 import sk.nuit.blanche.net.DownloadUtils.Callback;
 import sk.nuit.blanche.service.DownloadService;
 import sk.nuit.blanche.utils.Log;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
