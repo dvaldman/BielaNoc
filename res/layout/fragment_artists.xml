@@ -4,9 +4,20 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg">
     
-
-
-	<ImageView 
+    <com.nirhart.parallaxscroll.views.ParallaxListView 
+        android:id="@+id/artists_list"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:layout_width="match_parent"
+        android:divider="@color/transparent"
+        android:layout_height="match_parent"
+        app:parallax_factor="1.9"
+        app:circular_parallax="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:dividerHeight="@dimen/artists_list_divider_height"
+        />
+    
+    
+   	<ImageView 
 	    android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

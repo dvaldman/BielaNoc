@@ -22,4 +22,9 @@
     <dimen name="map_infoWindow_text_size">17sp</dimen>
     <dimen name="map_infoWindow_desc_text_size">16sp</dimen>
     
+    <!-- Artists fragment -->
+    <dimen name="artists_item_height">150dp</dimen>
+    <dimen name="artists_list_divider_height">5dp</dimen>
+    <dimen name="artists_list_divider_width">2dp</dimen>
+    <dimen name="artists_caption_label_padding">2dp</dimen>
 </resources>

@@ -40,10 +40,12 @@ public class ContentHolder {
 		Cursor c = DBHelper.getInstance(context).getResultsFromSingleTable(Tables.Artists.TABLE_NAME);
 		
 		Artist art = null;
+		
+		for(int repeat = 0; repeat < 15; repeat++)
         if(c.moveToFirst()){
         	do{
 	        	art = new Artist();
-	        	art.setId(c.getInt(c.getColumnIndex(Tables.Artists.ID)));
+	        	art.setId(repeat+c.getInt(c.getColumnIndex(Tables.Artists.ID)));
 	        	art.setName(c.getString(c.getColumnIndex(Tables.Artists.NAME)));
 	        	art.setWork(c.getString(c.getColumnIndex(Tables.Artists.WORK)));
 	        	art.setImage(c.getString(c.getColumnIndex(Tables.Artists.IMAGE)));
@@ -58,6 +60,9 @@ public class ContentHolder {
 	        	Log.i("place: "+art.getLatitude() + ", "+art.getLongitude());
 	        	
 	        	tmp.add(art);
+	        	
+	        	
+	        	
         	}while(c.moveToNext());
     	}
 		

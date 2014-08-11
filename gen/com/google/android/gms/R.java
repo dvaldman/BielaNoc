@@ -8,20 +8,20 @@ package com.google.android.gms;
 
 public final class R {
 	public static final class attr {
-		public static final int cameraBearing = 0x7f010063;
-		public static final int cameraTargetLat = 0x7f010064;
-		public static final int cameraTargetLng = 0x7f010065;
-		public static final int cameraTilt = 0x7f010066;
-		public static final int cameraZoom = 0x7f010067;
-		public static final int mapType = 0x7f010062;
-		public static final int uiCompass = 0x7f010068;
-		public static final int uiRotateGestures = 0x7f010069;
-		public static final int uiScrollGestures = 0x7f01006a;
-		public static final int uiTiltGestures = 0x7f01006b;
-		public static final int uiZoomControls = 0x7f01006c;
-		public static final int uiZoomGestures = 0x7f01006d;
-		public static final int useViewLifecycle = 0x7f01006e;
-		public static final int zOrderOnTop = 0x7f01006f;
+		public static final int cameraBearing = 0x7f010068;
+		public static final int cameraTargetLat = 0x7f010069;
+		public static final int cameraTargetLng = 0x7f01006a;
+		public static final int cameraTilt = 0x7f01006b;
+		public static final int cameraZoom = 0x7f01006c;
+		public static final int mapType = 0x7f010067;
+		public static final int uiCompass = 0x7f01006d;
+		public static final int uiRotateGestures = 0x7f01006e;
+		public static final int uiScrollGestures = 0x7f01006f;
+		public static final int uiTiltGestures = 0x7f010070;
+		public static final int uiZoomControls = 0x7f010071;
+		public static final int uiZoomGestures = 0x7f010072;
+		public static final int useViewLifecycle = 0x7f010073;
+		public static final int zOrderOnTop = 0x7f010074;
 	}
 	public static final class color {
 		public static final int common_action_bar_splitter = 0x7f07000f;
@@ -34,8 +34,8 @@ public final class R {
 		public static final int common_signin_btn_light_text_disabled = 0x7f07000c;
 		public static final int common_signin_btn_light_text_focused = 0x7f07000d;
 		public static final int common_signin_btn_light_text_pressed = 0x7f07000b;
-		public static final int common_signin_btn_text_dark = 0x7f070017;
-		public static final int common_signin_btn_text_light = 0x7f070018;
+		public static final int common_signin_btn_text_dark = 0x7f070018;
+		public static final int common_signin_btn_text_light = 0x7f070019;
 	}
 	public static final class drawable {
 		public static final int common_signin_btn_icon_dark = 0x7f020076;
@@ -94,7 +94,7 @@ public final class R {
 		public static final int common_signin_button_text_long = 0x7f0a001b;
 	}
 	public static final class styleable {
-		public static final int[] MapAttrs = { 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e, 0x7f01006f };
+		public static final int[] MapAttrs = { 0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e, 0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074 };
 		public static final int MapAttrs_cameraBearing = 1;
 		public static final int MapAttrs_cameraTargetLat = 2;
 		public static final int MapAttrs_cameraTargetLng = 3;

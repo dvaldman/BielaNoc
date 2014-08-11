@@ -35,6 +35,12 @@
         <item name="fontName">anca_medium.otf</item>
     </style>
     
+   <style name="custom_font_text_artist_layout">
+        <item name="android:background">@color/lightWhite</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontName">anca_medium.otf</item>
+    </style>
+    
     <style name="AppBaseTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">@drawable/action_bar_bg</item>
         <item name="android:titleTextStyle">@style/AppBaseTheme.ActionBar.TitleTextStyle</item>

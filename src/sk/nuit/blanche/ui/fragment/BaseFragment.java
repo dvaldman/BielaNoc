@@ -1,6 +1,7 @@
 package sk.nuit.blanche.ui.fragment;
 
 
+import sk.nuit.blanche.core.DrawableManager;
 import sk.nuit.blanche.interfaces.FragmentSwitcherInterface;
 import sk.nuit.blanche.model.ContentHolder;
 import android.os.Bundle;
@@ -49,6 +50,10 @@ public class BaseFragment extends Fragment implements FragmentSwitcherInterface{
 	
 	public ContentHolder getContentHolder(){
 		return ((BaseActivity)getActivity()).getContentHolder();
+	}
+	
+	public DrawableManager getDrawableManager(){
+		return ((BaseActivity)getActivity()).getDrawavleManager();
 	}
 	
 }

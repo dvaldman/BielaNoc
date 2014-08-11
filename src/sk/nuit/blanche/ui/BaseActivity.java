@@ -11,11 +11,13 @@ import java.util.Locale;
 
 
 
+
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 
 import sk.nuit.blanche.R;
+import sk.nuit.blanche.core.DrawableManager;
 import sk.nuit.blanche.customview.CustomTextView;
 import sk.nuit.blanche.customview.MyTypefaceSpan;
 import sk.nuit.blanche.model.ContentHolder;
@@ -115,6 +117,10 @@ public class BaseActivity extends SherlockFragmentActivity {
 	
 	public ContentHolder getContentHolder(){
 		return ContentHolder.getInstance(this);
+	}
+	
+	public DrawableManager getDrawavleManager(){
+		return DrawableManager.getInstance(this);
 	}
 	
 }
