@@ -7,8 +7,6 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-
-
 public class CustomTextView extends TextView {
 
 	public CustomTextView(Context context, AttributeSet attrs, int defStyle) {

@@ -9,6 +9,7 @@
         <item name="android:homeAsUpIndicator">@drawable/menu_icon</item>
         <item name="android:windowActionBarOverlay">true</item> 
         <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
