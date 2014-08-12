@@ -41,19 +41,20 @@ public class ContentHolder {
 		
 		Artist art = null;
 		
-		for(int repeat = 0; repeat < 15; repeat++)
+		
         if(c.moveToFirst()){
         	do{
 	        	art = new Artist();
-	        	art.setId(repeat+c.getInt(c.getColumnIndex(Tables.Artists.ID)));
+	        	art.setId(c.getInt(c.getColumnIndex(Tables.Artists.ID)));
 	        	art.setName(c.getString(c.getColumnIndex(Tables.Artists.NAME)));
 	        	art.setWork(c.getString(c.getColumnIndex(Tables.Artists.WORK)));
 	        	art.setImage(c.getString(c.getColumnIndex(Tables.Artists.IMAGE)));
 	        	art.setPlace(c.getString(c.getColumnIndex(Tables.Artists.PLACE)));
 	        	art.setCountry(c.getString(c.getColumnIndex(Tables.Artists.COUNTRY)));
 	        	art.setType(c.getString(c.getColumnIndex(Tables.Artists.TYPE)));
-	        	art.setDesc(c.getString(c.getColumnIndex(Tables.Artists.DESCRIPTION)));
-	        	art.setForKids((c.getInt(c.getColumnIndex(Tables.Artists.FOR_CHILDREN)) == Tables.dbBoolean.TRUE) ? true:false);
+	        	art.setDescWork(c.getString(c.getColumnIndex(Tables.Artists.DESCRIPTION_WORK)));
+	        	art.setDescArtist(c.getString(c.getColumnIndex(Tables.Artists.DESCRIPTION_ARTIST)));
+//	        	art.setForKids((c.getInt(c.getColumnIndex(Tables.Artists.FOR_CHILDREN)) == Tables.dbBoolean.TRUE) ? true:false);
 	        	art.setLatitude(Double.parseDouble(c.getString(c.getColumnIndex(Tables.Artists.LATITUDE))));
 	        	art.setLongitude(Double.parseDouble(c.getString(c.getColumnIndex(Tables.Artists.LONGITUDE))));
 	        	

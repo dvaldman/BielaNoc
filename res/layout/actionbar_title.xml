@@ -9,11 +9,16 @@
 <sk.nuit.blanche.customview.CustomTextView
         android:id="@+id/title"
         style="@style/custom_font_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textSize="@dimen/actionBar_text_size"
-            android:maxLines="1"
-            android:ellipsize="end"
-            android:text=""/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/actionBar_text_size"
+        android:maxLines="1"
+	    android:ellipsize="marquee"
+	    android:marqueeRepeatLimit="marquee_forever"
+	    android:singleLine="true"
+	    android:scrollHorizontally="true"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+        android:text=""/>
 </LinearLayout>

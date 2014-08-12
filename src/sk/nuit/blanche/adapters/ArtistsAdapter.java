@@ -4,13 +4,18 @@ import java.util.List;
 
 import sk.nuit.blanche.R;
 import sk.nuit.blanche.core.DrawableManager;
+import sk.nuit.blanche.interfaces.FragmentSwitcherInterface;
 import sk.nuit.blanche.model.Artist;
 import sk.nuit.blanche.model.ArtistsListRow;
+import sk.nuit.blanche.ui.MainActivity;
+import sk.nuit.blanche.ui.fragment.ArtistDetailFragment;
 import sk.nuit.blanche.utils.Log;
 import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
@@ -20,10 +25,10 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-public class ArtistsAdapter extends BaseAdapter{
+public class ArtistsAdapter extends BaseAdapter implements FragmentSwitcherInterface{
 	
-	private static final int LEFT = 0;
-	private static final int RIGHT = 1;
+	private final static int LEFT = 0;
+	private final static int RIGHT = 1;
 	
 	private Context context;
 	List<ArtistsListRow> artistsRow;
@@ -52,7 +57,7 @@ public class ArtistsAdapter extends BaseAdapter{
 	}
 
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
+	public View getView(final int position, View convertView, ViewGroup parent) {
 		ViewHolder viewHolder = null;
 		if(convertView==null){
 			LayoutInflater inflater = ((Activity) context).getLayoutInflater();
@@ -78,22 +83,36 @@ public class ArtistsAdapter extends BaseAdapter{
 		viewHolder.title1.setText(artistsRow.get(position).getLeftArtist().getName());
 		viewHolder.title2.setText(artistsRow.get(position).getRightArtist().getName());
 		
-//		viewHolder.image1.setBackgroundDrawable(context.getResources().getDrawable(R.drawable.img1));
-//		viewHolder.image2.setBackgroundDrawable(context.getResources().getDrawable(R.drawable.img2));
-		
 		 
-	     drawableManager.fetchScaledDrawableOnThread(
-//	    		 artistsRow.get(position).getLeftArtist().getImage(),
-	    		 "http://lorempixel.com/400/250/",
+	     drawableManager.addImageToItemLeft(
+	    		 artistsRow.get(position).getLeftArtist().getImage(),
 	    		 artistsRow.get(position).getLeftArtist().getId(),
-	    		 viewHolder.image1,viewHolder.progress1, null);
-	     
-	     drawableManager.fetchScaledDrawableOnThread(
-//	    		 artistsRow.get(position).getRightArtist().getImage(),
-	    		 "http://lorempixel.com/400/250/",
+	    		 viewHolder.image1,viewHolder.progress1);
+		
+	     drawableManager.addImageToItemRight(
+	    		 artistsRow.get(position).getRightArtist().getImage(),
 	    		 artistsRow.get(position).getRightArtist().getId(),
-	    		 viewHolder.image2,viewHolder.progress2, null);
-		        		
+	    		 viewHolder.image2,viewHolder.progress2);
+	     
+	     viewHolder.touch1.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Bundle args= new Bundle();
+				args.putSerializable(ArtistDetailFragment.ARTIST_OBJECT, artistsRow.get(position).getLeftArtist());
+				switchToFragment(FRAGMENT_ARTIST_DETAIL, args);
+			}
+		});
+	     
+	     viewHolder.touch2.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					Bundle args= new Bundle();
+					args.putSerializable(ArtistDetailFragment.ARTIST_OBJECT, artistsRow.get(position).getRightArtist());
+					switchToFragment(FRAGMENT_ARTIST_DETAIL, args);
+				}
+			});
+
+	     
 		return convertView;
 	}
 	
@@ -103,11 +122,20 @@ public class ArtistsAdapter extends BaseAdapter{
         RelativeLayout touch1, touch2;
         ProgressBar progress1, progress2;
    }
-	
-	public int getItemViewType(int position) {
-		return (position % 2 == 0) ? LEFT : RIGHT;
+
+	@Override
+	public void switchToFragment(int fragmentID, Bundle args) {
+		((MainActivity)context).switchFragment(fragmentID, false, args);
+	}
+
+	@Override
+	public void switchToFragmentAndClear(int fragmentID, Bundle args) {
+		// TODO Auto-generated method stub
+		
 	}
 	
+	
+
 	
 
 }

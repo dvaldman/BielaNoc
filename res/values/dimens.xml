@@ -27,4 +27,7 @@
     <dimen name="artists_list_divider_height">5dp</dimen>
     <dimen name="artists_list_divider_width">2dp</dimen>
     <dimen name="artists_caption_label_padding">2dp</dimen>
+    
+    <!-- Artist Detail fragment -->
+    <dimen name="artist_detail_image_height">300dp</dimen>
 </resources>

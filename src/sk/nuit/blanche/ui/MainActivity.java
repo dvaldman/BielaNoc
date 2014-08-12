@@ -5,6 +5,7 @@ import java.util.NoSuchElementException;
 
 import sk.nuit.blanche.R;
 import sk.nuit.blanche.interfaces.FragmentSwitcherInterface;
+import sk.nuit.blanche.ui.fragment.ArtistDetailFragment;
 import sk.nuit.blanche.ui.fragment.ArtistsFragment;
 import sk.nuit.blanche.ui.fragment.BaseFragment;
 import sk.nuit.blanche.ui.fragment.MainMenuFragment;
@@ -102,6 +103,9 @@ public class MainActivity extends BaseActivity implements FragmentSwitcherInterf
 			break;
 		case FRAGMENT_INSTAGRAM:
 			
+			break;
+		case FRAGMENT_ARTIST_DETAIL:
+			switchFragment(ArtistDetailFragment.newInstance(args), clearBackStack);
 			break;
 		}
 		

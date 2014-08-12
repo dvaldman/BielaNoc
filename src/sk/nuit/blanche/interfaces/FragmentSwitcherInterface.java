@@ -21,6 +21,7 @@ public interface FragmentSwitcherInterface {
 	public static final int FRAGMENT_PARTNERS  	  	= 10;
 	public static final int FRAGMENT_FACEBOOK  	  	= 11;
 	public static final int FRAGMENT_INSTAGRAM 	  	= 12;
+	public static final int FRAGMENT_ARTIST_DETAIL	= 13;
 //	public static final int FRAGMENT_ABOUT 		  	= 1;
 	
 	

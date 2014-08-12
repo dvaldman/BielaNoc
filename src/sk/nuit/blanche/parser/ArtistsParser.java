@@ -52,22 +52,22 @@ public class ArtistsParser extends Parser {
 		database.deleteValuesFromTable(Tables.Artists.TABLE_NAME, null, null, null);
 		ContentValues values = new ContentValues();
 		
+		for(int repeat = 0; repeat < 15; repeat++)
 		for (int i = 0; i< artistsArray.length(); i++){
 			JSONObject artistJsonItem = artistsArray.getJSONObject(i);
 			values.clear();
 			
-			
+			values.put(Tables.Artists.ID, repeat+i+1);
 			values.put(Tables.Artists.NAME, artistJsonItem.getString(Constants.KEYWORD_NAME));
 			values.put(Tables.Artists.WORK, artistJsonItem.getString(Constants.KEYWORD_WORK));
-			values.put(Tables.Artists.IMAGE, artistJsonItem.getString(Constants.KEYWORD_IMAGE));
+			values.put(Tables.Artists.IMAGE,"http://lorempixel.com/400/250/"); 
+//					artistJsonItem.getString(Constants.KEYWORD_IMAGE));
 			values.put(Tables.Artists.PLACE, artistJsonItem.getString(Constants.KEYWORD_PLACE));
 			values.put(Tables.Artists.COUNTRY, artistJsonItem.getString(Constants.KEYWORD_COUNTRY));
 			values.put(Tables.Artists.TYPE, artistJsonItem.getString(Constants.KEYWORD_TYPE));
-			values.put(Tables.Artists.DESCRIPTION, artistJsonItem.getString(Constants.KEYWORD_DESCRIPTION));
-			values.put(Tables.Artists.FOR_CHILDREN, (artistJsonItem.getBoolean(Constants.KEYWORD_FORCHILDREN)?Tables.dbBoolean.TRUE:Tables.dbBoolean.FALSE));
-//			values.put(Tables.Artists.LATITUDE, Long.toString(artistJsonItem.getLong(Constants.KEYWORD_LATITUDE)));
-//			values.put(Tables.Artists.LONGITUDE, Long.toString(artistJsonItem.getLong(Constants.KEYWORD_LONGITUDE)));
-//			
+			values.put(Tables.Artists.DESCRIPTION_WORK, artistJsonItem.getString(Constants.KEYWORD_DESC_WORK));
+			values.put(Tables.Artists.DESCRIPTION_ARTIST, artistJsonItem.getString(Constants.KEYWORD_DESC_ARTIST));
+//			values.put(Tables.Artists.FOR_CHILDREN, (artistJsonItem.getBoolean(Constants.KEYWORD_FORCHILDREN)?Tables.dbBoolean.TRUE:Tables.dbBoolean.FALSE));
 			values.put(Tables.Artists.LATITUDE, artistJsonItem.getString(Constants.KEYWORD_LATITUDE));
 			values.put(Tables.Artists.LONGITUDE, artistJsonItem.getString(Constants.KEYWORD_LONGITUDE));
 			

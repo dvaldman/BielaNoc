@@ -27,7 +27,7 @@ public class PlacesGroup {
         		.position(item.getGps())
         		.title(item.getName())
         		.icon(BitmapDescriptorFactory.fromBitmap(icon))
-        		.snippet(item.getDesc());
+        		.snippet(item.getDescWork());
         		
         		Marker marker = map.addMarker(markerOptions);
         		markerMap.put(marker, item);

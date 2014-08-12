@@ -10,7 +10,8 @@ public class Constants {
 	public static final String KEYWORD_PLACE	 	 = "place";
 	public static final String KEYWORD_COUNTRY	 	 = "country";
 	public static final String KEYWORD_TYPE		 	 = "type";
-	public static final String KEYWORD_DESCRIPTION 	 = "description";
+	public static final String KEYWORD_DESC_WORK	 = "descriptionWork";
+	public static final String KEYWORD_DESC_ARTIST 	 = "descriptionArtist";
 	public static final String KEYWORD_FORCHILDREN	 = "forChildren";
 	public static final String KEYWORD_LATITUDE	 	 = "latitude";
 	public static final String KEYWORD_LONGITUDE 	 = "longitude";

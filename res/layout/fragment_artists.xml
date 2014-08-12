@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:divider="@color/transparent"
         android:layout_height="match_parent"
-        app:parallax_factor="1.9"
+        app:parallax_factor="0.9"
         app:circular_parallax="true"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:dividerHeight="@dimen/artists_list_divider_height"

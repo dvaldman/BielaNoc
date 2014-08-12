@@ -1,9 +1,11 @@
 package sk.nuit.blanche.model;
 
+import java.io.Serializable;
+
 import com.google.android.gms.maps.model.LatLng;
 
 
-public class Artist {
+public class Artist implements Serializable{
 	
 	private int id;
 	private String name;
@@ -12,7 +14,8 @@ public class Artist {
 	private String place;
 	private String country;
 	private String type;
-	private String desc;
+	private String descWork;
+	private String descArtist;
 	private boolean forKids;
 	private Double latitude;
 	private Double longitude;
@@ -60,11 +63,17 @@ public class Artist {
 	public void setType(String type) {
 		this.type = type;
 	}
-	public String getDesc() {
-		return desc;
+	public String getDescWork() {
+		return descWork;
 	}
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setDescWork(String descWork) {
+		this.descWork = descWork;
+	}
+	public String getDescArtist() {
+		return descArtist;
+	}
+	public void setDescArtist(String descArtist) {
+		this.descArtist= descArtist;
 	}
 	public boolean isForKids() {
 		return forKids;

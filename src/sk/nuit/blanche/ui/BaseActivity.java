@@ -61,14 +61,29 @@ public class BaseActivity extends SherlockFragmentActivity {
     	getSupportActionBar().show();
     	getSupportActionBar().setHomeButtonEnabled(true);
     	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    	getActionBar().setDisplayShowCustomEnabled(true);
+    	
+    	setTitle(title);
+    	
+    }
+	
+	public void setUpAsBack(String title) {
+    	getSupportActionBar().show();
+    	getSupportActionBar().setHomeButtonEnabled(true);
+    	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    	
+    	setTitle(title);
+    }
+	
+	public void setTitle(String title){
+		getActionBar().setDisplayShowCustomEnabled(true);
     	getActionBar().setDisplayShowTitleEnabled(false);
 
     	LayoutInflater inflator = LayoutInflater.from(this);
     	View v = inflator.inflate(R.layout.actionbar_title, null);
 
     	CustomTextView ctv = (CustomTextView) v.findViewById(R.id.title);
-    	
+    	ctv.setSelected(true);
+    	ctv.performClick();
     	
 //    	SpannableString s = new SpannableString(title);
 //        s.setSpan(new MyTypefaceSpan(this, "anca_medium.otf"), 0, s.length(),
@@ -80,8 +95,7 @@ public class BaseActivity extends SherlockFragmentActivity {
 
     	getActionBar().setCustomView(v);
 //       getActionBar().setTitle(s);
-    	
-    }
+	}
 	
 	public void hideActionBar(){
 		getSupportActionBar().hide();

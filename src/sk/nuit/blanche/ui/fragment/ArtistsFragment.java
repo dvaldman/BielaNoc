@@ -58,4 +58,12 @@ public class ArtistsFragment extends BaseFragment{
 
 		return tmp;
 	}
+	
+	
+	@Override
+	public void onHiddenChanged(boolean hidden) {
+		super.onHiddenChanged(hidden);
+		if(!hidden)
+			setHomeAsBack(title);
+	}
 }

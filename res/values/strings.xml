@@ -21,5 +21,9 @@
 	<string name="menu_10_partners">PARTNERS</string>
 	<string name="menu_11_facebook">FACEBOOK</string>
 	<string name="menu_12_instagram">INSTAGRAM</string>
+	
+	
+	<string name="about_installation">About installation</string>
+	<string name="about_artist">About artist</string>
 
 </resources>

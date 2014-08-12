@@ -1,0 +1,122 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:parallax_factor="1.9"
+	app:alpha_factor="0.9"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/artist_detail_image_height"
+            android:gravity="center"
+            android:contentDescription="@string/app_name"
+            />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+        <sk.nuit.blanche.customview.CustomTextView
+            android:id="@+id/name"
+            style="@style/custom_font_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        
+        <sk.nuit.blanche.customview.CustomTextView
+            android:id="@+id/type"
+            style="@style/custom_font_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <sk.nuit.blanche.customview.CustomTextView
+            android:id="@+id/place"
+            style="@style/custom_font_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+            
+            <ImageView 
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/go"/>
+            
+        </RelativeLayout>
+        
+        <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:layout_marginTop="5dp"/>
+        
+        <sk.nuit.blanche.customview.CustomTextView
+            android:layout_width="match_parent"
+            style="@style/custom_font_text"
+            android:layout_height="wrap_content"
+            android:text="@string/about_installation"
+            android:textSize="30sp"
+            android:padding="5dp" />
+        
+        <sk.nuit.blanche.customview.CustomTextView
+            android:id="@+id/about_install"
+            style="@style/custom_font_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_installation"
+            android:textSize="18sp"
+            android:padding="5dp" />
+        
+        <ImageView 
+            android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                />
+        
+        <sk.nuit.blanche.customview.CustomTextView
+            android:layout_width="match_parent"
+            style="@style/custom_font_text"
+            android:layout_height="wrap_content"
+            android:text="@string/about_artist"
+            android:textSize="30sp"
+            android:padding="5dp" />
+        
+        <sk.nuit.blanche.customview.CustomTextView
+            android:id="@+id/about_artist"
+            style="@style/custom_font_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_installation"
+            android:textSize="18sp"
+            android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

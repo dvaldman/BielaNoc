@@ -21,20 +21,23 @@ public class Tables{
 		public static final String	PLACE				= TABLE_NAME + "_" + Constants.KEYWORD_PLACE;
 		public static final String	COUNTRY				= TABLE_NAME + "_" + Constants.KEYWORD_COUNTRY;
 		public static final String	TYPE				= TABLE_NAME + "_" + Constants.KEYWORD_TYPE;
-		public static final String	DESCRIPTION			= TABLE_NAME + "_" + Constants.KEYWORD_DESCRIPTION;
+		public static final String	DESCRIPTION_WORK	= TABLE_NAME + "_" + Constants.KEYWORD_DESC_WORK;
+		public static final String	DESCRIPTION_ARTIST	= TABLE_NAME + "_" + Constants.KEYWORD_DESC_ARTIST;
 		public static final String	FOR_CHILDREN		= TABLE_NAME + "_" + Constants.KEYWORD_FORCHILDREN;
 		public static final String	LATITUDE			= TABLE_NAME + "_" + Constants.KEYWORD_LATITUDE;
 		public static final String	LONGITUDE			= TABLE_NAME + "_" + Constants.KEYWORD_LONGITUDE;
 		
 		public static final String	CREATE_TABLE		= "CREATE TABLE " + TABLE_NAME + " (" + 
-																							ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+																							ID + " INTEGER PRIMARY KEY, " +
+//				ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
 																							NAME + " TEXT, "+ 
 																							WORK + " TEXT, "+
 																							IMAGE + " TEXT, " +
 																							PLACE + " TEXT, "+
 																							COUNTRY + " TEXT, "+
 																							TYPE + " TEXT, "+
-																							DESCRIPTION + " TEXT, "+
+																							DESCRIPTION_WORK + " TEXT, "+
+																							DESCRIPTION_ARTIST + " TEXT, "+
 																							FOR_CHILDREN + " INTEGER, "+
 																							LATITUDE + " TEXT, "+
 																							LONGITUDE + " TEXT"+

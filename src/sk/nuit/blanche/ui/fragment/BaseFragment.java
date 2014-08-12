@@ -44,6 +44,10 @@ public class BaseFragment extends Fragment implements FragmentSwitcherInterface{
 		((BaseActivity)getActivity()).setHomeAsBack(title);
 	}
 	
+	public void setUpAsBack(String title){
+		((BaseActivity)getActivity()).setHomeAsBack(title);
+	}
+	
 	public void hideActionBar(){
 		((BaseActivity)getActivity()).hideActionBar();
 	}
