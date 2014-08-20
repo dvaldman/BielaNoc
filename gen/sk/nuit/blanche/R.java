@@ -1220,42 +1220,42 @@ containing a value of this type.
         public static final int abs__textButton=0x7f050017;
         public static final int abs__title=0x7f05001f;
         public static final int abs__up=0x7f05000b;
-        public static final int artist1=0x7f050053;
-        public static final int artist2=0x7f050057;
+        public static final int artist1=0x7f050054;
+        public static final int artist2=0x7f050058;
         public static final int artists_list=0x7f050042;
         public static final int button=0x7f05003f;
         public static final int content=0x7f050037;
-        public static final int description=0x7f050059;
+        public static final int description=0x7f05005a;
         public static final int disableHome=0x7f050009;
         public static final int edit_query=0x7f05002a;
         public static final int homeAsUp=0x7f050006;
         public static final int hybrid=0x7f050013;
         public static final int image=0x7f05003b;
         public static final int imageView1=0x7f050039;
-        public static final int left=0x7f050051;
+        public static final int left=0x7f050052;
         public static final int listMode=0x7f050002;
-        public static final int logo=0x7f050043;
-        public static final int map=0x7f050050;
-        public static final int menu_btn1=0x7f050044;
-        public static final int menu_btn10=0x7f05004d;
-        public static final int menu_btn11=0x7f05004e;
-        public static final int menu_btn12=0x7f05004f;
-        public static final int menu_btn2=0x7f050045;
-        public static final int menu_btn3=0x7f050046;
-        public static final int menu_btn4=0x7f050047;
-        public static final int menu_btn5=0x7f050048;
-        public static final int menu_btn6=0x7f050049;
-        public static final int menu_btn7=0x7f05004a;
-        public static final int menu_btn8=0x7f05004b;
-        public static final int menu_btn9=0x7f05004c;
+        public static final int logo=0x7f050044;
+        public static final int map=0x7f050051;
+        public static final int menu_btn1=0x7f050045;
+        public static final int menu_btn10=0x7f05004e;
+        public static final int menu_btn11=0x7f05004f;
+        public static final int menu_btn12=0x7f050050;
+        public static final int menu_btn2=0x7f050046;
+        public static final int menu_btn3=0x7f050047;
+        public static final int menu_btn4=0x7f050048;
+        public static final int menu_btn5=0x7f050049;
+        public static final int menu_btn6=0x7f05004a;
+        public static final int menu_btn7=0x7f05004b;
+        public static final int menu_btn8=0x7f05004c;
+        public static final int menu_btn9=0x7f05004d;
         public static final int name=0x7f05003c;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050001;
         public static final int place=0x7f05003e;
         public static final int progress=0x7f05003a;
-        public static final int progressbar1=0x7f050052;
-        public static final int progressbar2=0x7f050056;
-        public static final int right=0x7f050055;
+        public static final int progressbar1=0x7f050053;
+        public static final int progressbar2=0x7f050057;
+        public static final int right=0x7f050056;
         public static final int satellite=0x7f050011;
         public static final int showCustom=0x7f050008;
         public static final int showHome=0x7f050005;
@@ -1264,10 +1264,11 @@ containing a value of this type.
         public static final int tabMode=0x7f050003;
         public static final int terrain=0x7f050012;
         public static final int title=0x7f050036;
-        public static final int title1=0x7f050054;
-        public static final int title2=0x7f050058;
+        public static final int title1=0x7f050055;
+        public static final int title2=0x7f050059;
         public static final int type=0x7f05003d;
         public static final int useLogo=0x7f050004;
+        public static final int webview=0x7f050043;
         public static final int wrap_content=0x7f050000;
     }
     public static final class integer {
@@ -1300,12 +1301,14 @@ containing a value of this type.
         public static final int activity_splash=0x7f030017;
         public static final int fragment_artist_detail=0x7f030018;
         public static final int fragment_artists=0x7f030019;
-        public static final int fragment_main=0x7f03001a;
-        public static final int fragment_map=0x7f03001b;
-        public static final int list_row_artists_layout=0x7f03001c;
-        public static final int place_detail_layout=0x7f03001d;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001e;
-        public static final int sherlock_spinner_item=0x7f03001f;
+        public static final int fragment_dictionary=0x7f03001a;
+        public static final int fragment_main=0x7f03001b;
+        public static final int fragment_map=0x7f03001c;
+        public static final int fragment_nuit=0x7f03001d;
+        public static final int list_row_artists_layout=0x7f03001e;
+        public static final int place_detail_layout=0x7f03001f;
+        public static final int sherlock_spinner_dropdown_item=0x7f030020;
+        public static final int sherlock_spinner_item=0x7f030021;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1446,6 +1449,7 @@ containing a value of this type.
         public static final int menu_7_media=0x7f0a002a;
         public static final int menu_8_audio=0x7f0a002b;
         public static final int menu_9_dictionary=0x7f0a002c;
+        public static final int nuit_blanche=0x7f0a0032;
     }
     public static final class style {
         /** 

@@ -25,5 +25,7 @@
 	
 	<string name="about_installation">About installation</string>
 	<string name="about_artist">About artist</string>
+	
+	<string name="nuit_blanche">Nuit Blanche</string>
 
 </resources>

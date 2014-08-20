@@ -8,8 +8,10 @@ import sk.nuit.blanche.interfaces.FragmentSwitcherInterface;
 import sk.nuit.blanche.ui.fragment.ArtistDetailFragment;
 import sk.nuit.blanche.ui.fragment.ArtistsFragment;
 import sk.nuit.blanche.ui.fragment.BaseFragment;
+import sk.nuit.blanche.ui.fragment.DictionaryFragment;
 import sk.nuit.blanche.ui.fragment.MainMenuFragment;
 import sk.nuit.blanche.ui.fragment.MapFragment;
+import sk.nuit.blanche.ui.fragment.NuitBlancheFragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -81,7 +83,7 @@ public class MainActivity extends BaseActivity implements FragmentSwitcherInterf
 			switchFragment(MapFragment.newInstance(getResources().getString(R.string.menu_4_map)), clearBackStack);
 			break;
 		case FRAGMENT_NUIT:
-			
+			switchFragment(NuitBlancheFragment.newInstance(getResources().getString(R.string.menu_5_nuit)), clearBackStack);
 			break;
 		case FRAGMENT_KIDS:
 			
@@ -93,7 +95,7 @@ public class MainActivity extends BaseActivity implements FragmentSwitcherInterf
 			
 			break;
 		case FRAGMENT_DICTIONARY:
-			
+			switchFragment(DictionaryFragment.newInstance(getResources().getString(R.string.menu_9_dictionary)), clearBackStack);
 			break;
 		case FRAGMENT_PARTNERS:
 			
